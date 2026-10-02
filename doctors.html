@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Doctor directory for KLE Hospital Hubballi">
+  <title>Doctors Directory | KLE Hospital Hubballi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Inline override if style.css is not immediately editable */
+    .card.doctor img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <aside class="sidebar">
+    <div class="brand">
+      <img class="mark" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg4Fn6z1rPMvVbRsi-LZIAOZABWecGmvibbIbEE08Jgw&s=10" alt="hospital logo" width="48" height="48" loading="lazy">
+      <div class="brandText"><b>KLE Hospital</b><small>Hubballi • JGMM Campus</small></div>
+    </div>
+    <nav class="nav">
+      <a href="index.html"><span>&#9776;</span><span>Home</span></a>
+      <a href="about.html"><span>&#9873;</span><span>About Hospital</span></a>
+      <a href="doctors.html"><span>&#10009;</span><span>Our Doctors</span></a>
+      <a href="appointment.html"><span>&#9877;</span><span>Book Appointment</span></a>
+    </nav>
+    <div class="sidefoot">
+      <div class="emg"><b>24/7 Emergency</b><br>0836-2007777</div>
+    </div>
+  </aside>
+
+  <div class="backdrop"></div>
+
+  <main class="main" id="main">
+    <header class="top">
+      <button class="hamb" data-menu aria-label="Open navigation">☰</button>
+      <b style="margin-left:12px">KLE Hospital Hubballi</b>
+    </header>
+
+    <section class="pageHead">
+      <div class="container">
+        <span class="eyebrow">Care team</span>
+        <h1>Doctors directory</h1>
+        <p>Search by doctor name, qualification or department. Schedules should be confirmed directly with KLE Hospital before travel.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filters">
+          <div class="field grow">
+            <label for="doctorSearch">Search doctors</label>
+            <input class="input" id="doctorSearch" type="search" placeholder="Name, qualification or specialty">
+          </div>
+          <div class="field" style="min-width:250px">
+            <label for="doctorDepartment">Department</label>
+            <select class="select" id="doctorDepartment">
+              <option value="">All departments</option>
+              <option>Nephrology</option>
+              <option>General Medicine</option>
+              <option>Obstetrics & Gynaecology</option>
+              <option>Respiratory Medicine</option>
+              <option>ENT</option>
+              <option>Ophthalmology</option>
+              <option>Psychiatry</option>
+              <option>Dermatology</option>
+              <option>Emergency Medicine</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="doctorGrid" class="grid g3">
+          <!-- 1. Nephrology -->
+          <div class="card doctor" data-doctor data-department="Nephrology">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEijE2eQuI6FhrXBzHxL-H8M8sngTQFvE_KSMMYYmeqw&s=10" alt="Dr. Mallikarjun S. Karishetti" loading="lazy">
+            <div class="doctorBody">
+              <span class="badge">Nephrology</span> <span class="badge">Obstetrics & Gynaecology</span>
+              <h3>Dr. Mallikarjun S. Karishetti (Khanpet)</h3>
+              <span class="badge">M.D., D.N.B. (Nephrology)</span>
+              <div class="meta">
+                <span>OPD: Mon & Thu • 9:00 AM–1:00 PM</span>
+                <span>Project directory entry</span>
+              </div>
+              <a class="btn primary" href="appointment.html">Book Now →</a>
+            </div>
+          </div>
+
+          <!-- 2. General Medicine -->
+          <div class="card doctor" data-doctor data-department="General Medicine">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFzQMBGFJ1CeFxDWF1VFrNZcCfVu6SbrEOyXgaODoeTw&s=10" alt="Dr. Naveen S. Kulkarni" loading="lazy">
+            <div class="doctorBody">
+              <span class="badge">General Medicine</span>
+              <h3>Dr. Naveen S. Kulkarni</h3>
+              <span class="badge">MBBS, MD (General Medicine)</span>
+              <div class="meta">
+                <span>OPD: Confirm with hospital</span>
+              </div>
+              <a class="btn primary" href="appointment.html">Book Now →</a>
+            </div>
+          </div>
+
+          <!-- 3. Obstetrics & Gynaecology -->
+          <div class="card doctor" data-doctor data-department="Obstetrics & Gynaecology">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-wv1REcFF38r72yAsWxNz6pyXZKDwtMnFKj9kDgvXkQ&s=10" alt="Dr. Lata K. Mankani" loading="lazy">
+            <div class="doctorBody">
+              <span class="badge">Obstetrics & Gynaecology</span>
+              <h3>Dr. Lata K. Mankani</h3>
+              <span class="badge">MBBS, MD (Obstetrics & Gynaecology)</span>
+              <div class="meta">
+                <span>OPD: Confirm with hospital</span>
+              </div>
+              <a class="btn primary" href="appointment.html">Book Now →</a>
+            </div>
+          </div>
+
+          <!-- 4. Obstetrics & Gynaecology -->
+          <div class="card doctor" data-doctor data-department="Obstetrics & Gynaecology Respiratory Medicine">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4wyMkwAn-KC-Msw5K2tyHtytjZXdlbVON5oSj_pZ9Qw&s=10" alt="Dr. Udayashree Voorkara" loading="lazy">
+            <div class="doctorBody">
+              <span class="badge">Obstetrics & Gynaecology</span>
+              <h3>Dr. Udayashree Voorkara</h3>
+              <span class="badge">MBBS, DGO, DNB (OBG), FMAS</span>
+              <div class="meta">
+                <span>OPD: Confirm with hospital</span>
+              </div>
+              <a class="btn primary" href="appointment.html">Book Now →</a>
+            </div>
+          </div>
+
+          <!-- 5. Respiratory Medicine -->
+          <div class="card doctor" data-doctor data-department="Respiratory Medicine">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkF2sajqIffHKEpgZe75LOcqeTC1bUe7atB7EzlF9_QA&s" alt="Dr. Shrikant Hiremath" loading="lazy">
+            <div class="doctorBody">
+              <span class="badge">Respiratory Medicine</span>
+              <h3>Dr. Shrikant Hiremath</h3>
+              <span class="badge">MBBS, MD (Pulmonary / Respiratory Medicine)</span>
+              <div class="meta">
+                <span>OPD: Confirm with hospital</span>
+              </div>
+              <a class="btn primary" href="appointment.html">Book Now →</a>
+            </div>
+          </div>
+
+          <!-- 6. ENT -->
+          <div class="card doctor" data-doctor data-department="ENT">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Dbb0S-K40_6t2FOD1VU2ZIqB0ZRl4T0UsnvMD6cQIA&s=10" alt="Dr. Anita Aramani" loading="lazy">
+            <div class="doctorBody">
+              <span class="badge">ENT</span>
+              <h3>Dr. Anita Aramani</h3>
+              <span class="badge">MBBS, MS (ENT / Otorhinolaryngology)</span>
+              <div class="meta">
+                <span>OPD: Confirm with hospital</span>
+              </div>
+              <a class="btn primary" href="appointment.html">Book Now →</a>
+            </div>
+          </div>
+
+          <!-- 7. Ophthalmology -->
+          <div class="card doctor" data-doctor data-department="Ophthalmology">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzBuyqGU9lIyMqXCRczz9VsJRMfXltMoLXKD0TVuQQXg&s=10" alt="Dr. Sheetal V. Girimallanavar" loading="lazy">
+            <div class="doctorBody">
+              <span class="badge">Ophthalmology</span>
+              <span class="badge">Emergency Medicine</span>
+              <h3>Dr. Sheetal V. Girimallanavar</h3>
+              <span class="badge">MBBS, MS, DNB (Ophthalmology)</span>
+              <div class="meta">
+                <span>OPD: Confirm with hospital</span>
+              </div>
+              <a class="btn primary" href="appointment.html">Book Now →</a>
+            </div>
+          </div>
+
+          <!-- 8. Psychiatry -->
+          <div class="card doctor" data-doctor data-department="Psychiatry">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJftdKS3qF_WY39tI4LPHcYKcO8JzVxp2V1-vTqI8T8w&s=10" alt="Dr. Arun V. Gadad" loading="lazy">
+            <div class="doctorBody">
+              <span class="badge">Psychiatry</span>
+              <h3>Dr. Arun V. Gadad</h3>
+              <span class="badge">MBBS, MD (Psychiatry)</span>
+              <div class="meta">
+                <span>OPD: Confirm with hospital</span>
+              </div>
+              <a class="btn primary" href="appointment.html">Book Now →</a>
+            </div>
+          </div>
+
+          <!-- 9. Dermatology -->
+          <div class="card doctor" data-doctor data-department="Dermatology">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1ySzSiOY_kMylZczsKu3NJHx8VfNsn8GvzIeca2dn1g&s=10" alt="Dr. Pradeep V. Bhagvat" loading="lazy">
+            <div class="doctorBody">
+              <span class="badge">Dermatology</span>
+              <h3>Dr. Pradeep V. Bhagvat</h3>
+              <span class="badge">MBBS, MD, DNB (Dermatology / DVL)</span>
+              <div class="meta">
+                <span>OPD: Confirm with hospital</span>
+              </div>
+              <a class="btn primary" href="appointment.html">Book Now →</a>
+            </div>
+          </div>
+
+          <!-- 10. Emergency Medicine -->
+          <div class="card doctor" data-doctor data-department="Emergency Medicine">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR82Px-m1zHLz2G4_U9q9iHJs6vVQDYqjldDsvCQg6B7Q&s" alt="Dr. Bharath Angadi" loading="lazy">
+            <div class="doctorBody">
+              <span class="badge">Emergency Medicine</span>
+              <h3>Dr. Bharath Angadi</h3>
+              <span class="badge">MBBS, MD, DNB (Emergency Medicine)</span>
+              <div class="meta">
+                <span>Emergency context: 24/7 • confirm roster</span>
+              </div>
+              <a class="btn primary" href="appointment.html">Book Now →</a>
+            </div>
+          </div>
+
+          <div id="doctorEmpty" class="empty hidden">No matching doctors. Try another search.</div>
+        </div>
+
+        <p class="hint" style="margin-top:20px">The ten names/qualifications above follow the supplied project brief. Verify each profile, current affiliation and OPD schedule before public launch; KLE's official site independently lists Dr. M. S. Karishetti (Khanpet) for nephrology at its Belagavi hospital.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footGrid">
+        <div>
+          <h3>KLE Hospital & Medical Research Centre</h3>
+          <p>Gabbur Cross, Hubballi – 580028, Karnataka.</p>
+        </div>
+        <div>
+          <h3>Quick links</h3>
+          <p><a href="index.html">Home</a><br><a href="about.html">About</a><br><a href="appointment.html">Appointment</a></p>
+        </div>
+        <div>
+          <h3>Emergency</h3>
+          <p><strong>0836-2007777</strong></p>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script src="app.js" defer></script>
+</body>
+</html>
